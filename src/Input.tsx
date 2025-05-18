@@ -1,5 +1,9 @@
 import type { ChangeEvent, PropsWithoutRef } from "react";
 
+// by abstracting the Input I have the flexibility to style the component in any way I want
+// so should this would require any type of styling I'd just have to keep the Props/API
+// of the component intact and would restyle update the styling fairly quickly
+
 export function Input({
   onChange,
   value,

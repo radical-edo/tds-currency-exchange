@@ -1,6 +1,8 @@
 import { type ConvertCurrency } from "./CurrencyForm";
 
 const authorization = `Bearer ${import.meta.env.VITE_API_KEY}`;
+// above API key should not be part of the frontend code
+// normally I'd recommend to store this in the backend and provide a simple reverse proxy to hide the API key
 
 export async function convertCurrency(
   convert: ConvertCurrency

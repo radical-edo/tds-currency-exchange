@@ -16,6 +16,11 @@ const ErrorMsgs: Record<string | "from" | "to" | "amount", string> = {
   amount: "This field is required and should be a positive number",
 };
 
+// fetching the data as part of the form instead of some higher component
+// helps to make the component moveable
+// otherwise the logic for fetching data would have to be re-implemented in the higher component
+// each time this form would be reused
+
 export function CurrencyForm(
   props: PropsWithoutRef<{ onSubmit: (output: ConvertCurrency) => void }>
 ) {

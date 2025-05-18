@@ -5,6 +5,8 @@ import { CurrencyForm, type ConvertCurrency } from "./CurrencyForm";
 import "./App.css";
 import { convertCurrency } from "./api";
 
+// the app should figure out what should be done after the CurrencyForm has been submitted
+
 export function App() {
   const [convert, setConvert] = useState<ConvertCurrency>({
     amount: null,
